@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Header_logo from '../assets/Header_logo.svg'
 import Mh from '../assets/Mh.svg'
 import Mh_close from '../assets/Mh_close.svg'
-import {device} from '../styles/BreakPoints'
+import {device} from '../../styles/BreakPoints'
 
 const Header = () => {
   const [menu, setMenu] = React.useState(false)
