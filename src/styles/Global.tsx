@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { device } from "./BreakPoints";
+import { createGlobalStyle } from 'styled-components';
+import { device } from './BreakPoints';
 
 const GlobalStyles = createGlobalStyle`
 
@@ -73,6 +73,21 @@ img {
   font-size: 1.56rem;
   line-height:27.5px;
 }
+
+.hl-5 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.312rem;
+  line-height:23.1px;
+}
+
+.hl-6 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height:19.8px;
+}
+
 
 .sb-1 {
   font-family: 'Lora', serif;
