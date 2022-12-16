@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Header_logo from '../assets/Header_logo.svg'
-import Mh from '../assets/Mh.svg'
-import Mh_close from '../assets/Mh_close.svg'
+import Header_logo from '../../assets/Header_logo.svg'
+import Mh from '../../assets/Mh.svg'
+import Mh_close from '../../assets/Mh_close.svg'
 import {device} from '../../styles/BreakPoints'
 
 const Header = () => {
@@ -100,7 +100,7 @@ const HeaderStyles = styled.header`
         padding:0 0 8px 0;
         > a {
           font-size: 24px;
-          color: ${({ theme }) => theme.colors.White};
+          color: ${({ theme }) => theme.colors.Primary};
         }
         &:last-child {
           border:none;
@@ -113,7 +113,7 @@ const HeaderStyles = styled.header`
       }
     }
     .menuActive {
-      background: rgba( 255, 255, 255, 0.05 );
+      background: rgba( 23, 23, 23, 0.9 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
       backdrop-filter: blur( 1px );
       -webkit-backdrop-filter: blur( 1px );

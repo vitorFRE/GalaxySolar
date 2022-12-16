@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { device } from "./BreakPoints";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -15,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
 }
 body {
   margin: 0px;
+  color:#fff;
   background-color: #000814;
   font-family: 'Inter', sans-serif;
 }
@@ -88,6 +90,18 @@ img {
   line-height:19.5px;
 }
 
+@media ${device.md} {
+  .hl-2 {
+    font-size: 2.25rem;
+    letter-spacing: 0.25px;
+    line-height:39.6px;
+  }
+  .b-1 {
+    font-size: 0.812rem;
+    letter-spacing: 0.25px;
+    line-height:16.9px;
+  }
+}
 `;
 
 export default GlobalStyles;
