@@ -31,6 +31,7 @@ const BannerContent = styled.main`
   margin: 0 auto;
 
   margin-top:50px;
+  margin-bottom:77px;
 
   display:grid;
   grid-template-columns:55% auto;
