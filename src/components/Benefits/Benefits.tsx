@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BenefitsCard from './BenefitsCard';
+import BenefitsCard from '../Utils/SimpleCard';
 import folha from '../../assets/folha.svg';
 import hourglass from '../../assets/hourglass.svg';
 import chart_line from '../../assets/chart_line.svg';
@@ -53,7 +53,7 @@ const Container = styled.div`
   max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
-  padding-top: 124px;
+  padding-bottom: 80px;
 
   color: ${({ theme }) => theme.colors.Black};
 
@@ -62,7 +62,6 @@ const Container = styled.div`
 
   @media ${device.md} {
     grid-template-columns: 1fr;
-    padding-top: 62px;
   }
 `;
 

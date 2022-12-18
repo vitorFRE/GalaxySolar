@@ -19,6 +19,7 @@ body {
   color:#fff;
   background-color: #000814;
   font-family: 'Inter', sans-serif;
+  height:3000px;
 }
 a {
   text-decoration: none;
@@ -39,6 +40,19 @@ li {
 img {
   display: block;
   max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0496FF;
+  border-radius: 5px;
 }
 
 // Typography
