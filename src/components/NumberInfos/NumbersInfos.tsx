@@ -21,7 +21,7 @@ const NumbersInfos = () => {
           </li>
           <li>
             <span>
-              +<span className="n">463331</span>
+              +R$<span className="n">463331</span>
             </span>
             Dinheiro Economizado
           </li>
