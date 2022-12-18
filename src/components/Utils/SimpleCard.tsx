@@ -7,7 +7,7 @@ type Args = {
   desc: string;
 };
 
-const BenefitsCard = (dados: Args) => {
+const SimpleCard = (dados: Args) => {
   return (
     <CardUl>
       <li>
@@ -27,4 +27,4 @@ const CardUl = styled.ul`
   }
 `;
 
-export default BenefitsCard;
+export default SimpleCard;
