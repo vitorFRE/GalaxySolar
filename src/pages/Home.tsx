@@ -1,5 +1,6 @@
 import Banner from '../components/Banner/Banner';
 import Benefits from '../components/Benefits/Benefits';
+import { Contact } from '../components/Contact/Contact';
 import Header from '../components/Header/Header';
 import NumbersInfos from '../components/NumberInfos/NumbersInfos';
 import Clients from '../components/OurClients/Clients';
@@ -14,6 +15,7 @@ function Home() {
       <Benefits />
       <Clients />
       <OurWork />
+      <Contact />
     </>
   );
 }

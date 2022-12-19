@@ -19,7 +19,6 @@ body {
   color:#fff;
   background-color: #000814;
   font-family: 'Inter', sans-serif;
-  height:3000px;
 }
 a {
   text-decoration: none;
