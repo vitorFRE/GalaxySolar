@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { device } from '../../styles/BreakPoints';
@@ -11,7 +12,11 @@ const NumbersInfos = () => {
 
   return (
     <Container_bg>
-      <Container>
+      <Container
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        transition={{ ease: 'linear', duration: 1.2 }}
+      >
         <ul className="b-1">
           <li>
             <span>
@@ -47,7 +52,7 @@ const Container_bg = styled.div`
   background-color: white;
 `;
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   max-width: 900px;
   padding: 0 1rem;
   margin: 0 auto;

@@ -6,12 +6,17 @@ import hourglass from '../../assets/hourglass.svg';
 import chart_line from '../../assets/chart_line.svg';
 import real from '../../assets/real.svg';
 import { device } from '../../styles/BreakPoints';
+import { motion } from 'framer-motion';
 
 const Benefits = () => {
   return (
     <Container_bg>
       <Container id="sobre">
-        <TitleContainer>
+        <TitleContainer
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+          transition={{ ease: 'linear', duration: 1.5 }}
+        >
           <h1 className="hl-1">
             Sobre Nós
             <br /> e Benefícios.
@@ -43,7 +48,11 @@ const Benefits = () => {
           </p>
         </TitleContainer>
 
-        <BenefitsContainer>
+        <BenefitsContainer
+          initial={{ x: 100 }}
+          animate={{ x: 0 }}
+          transition={{ ease: 'linear', duration: 1.2 }}
+        >
           <BenefitsCard
             img={folha}
             title="Energia limpa"
@@ -91,7 +100,7 @@ const Container = styled.div`
   }
 `;
 
-const TitleContainer = styled.div`
+const TitleContainer = styled(motion.div)`
   p {
     margin-bottom: 15px;
   }
@@ -108,7 +117,7 @@ const TitleContainer = styled.div`
   }
 `;
 
-const BenefitsContainer = styled.div`
+const BenefitsContainer = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px 60px;

@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../../styles/BreakPoints';
+import { motion } from 'framer-motion';
 
 const Banner = () => {
   return (
     <BannerContent id="banner">
-      <TextContainer>
+      <TextContainer
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
+        transition={{ ease: 'easeOut', duration: 1 }}
+      >
         <h2 className="hl-2">
           Energia limpa e renovavel
           <br />
@@ -23,7 +28,11 @@ const Banner = () => {
         </p>
       </TextContainer>
 
-      <ImgContainer>
+      <ImgContainer
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        transition={{ ease: 'easeOut', duration: 1 }}
+      >
         <img src="https://images.unsplash.com/photo-1589275776107-e193042128bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
       </ImgContainer>
     </BannerContent>
@@ -45,7 +54,7 @@ const BannerContent = styled.main`
     grid-template-columns: 1fr;
   }
 `;
-const TextContainer = styled.div`
+const TextContainer = styled(motion.div)`
   h2 {
     margin-bottom: 25px;
   }
@@ -54,7 +63,7 @@ const TextContainer = styled.div`
   }
 `;
 
-const ImgContainer = styled.div`
+const ImgContainer = styled(motion.div)`
   img {
     border-radius: 5px;
   }
