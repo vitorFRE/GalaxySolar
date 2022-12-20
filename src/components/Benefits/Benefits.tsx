@@ -10,12 +10,37 @@ import { device } from '../../styles/BreakPoints';
 const Benefits = () => {
   return (
     <Container_bg>
-      <Container>
+      <Container id="sobre">
         <TitleContainer>
-          <h1 className="hl-2">
-            Benefícios
-            <br /> da Energia Solar.
+          <h1 className="hl-1">
+            Sobre Nós
+            <br /> e Benefícios.
           </h1>
+
+          <p className="b">
+            Nossa empresa especializada em soluções de energia solar para
+            propriedades residenciais, comerciais e rurais. Oferecemos uma gama
+            de serviços, incluindo projeto e instalação de sistemas de painéis
+            solares, bem como manutenção e suporte continuados.
+          </p>
+
+          <p className="b">
+            Nossa equipe de profissionais experientes tem um profundo
+            conhecimento de tecnologia solar e está comprometida em oferecer aos
+            nossos clientes o mais alto nível de serviço.
+          </p>
+
+          <p className="b">
+            Acreditamos que a energia solar é o futuro da energia e estamos
+            dedicados a ajudar nossos clientes a fazer a transição para uma
+            fonte de energia mais sustentável e eficiente em termos de custos.
+          </p>
+
+          <p className="b">
+            Se você é um proprietário de residência, empresário ou agricultor,
+            temos a expertise e os recursos para ajudá-lo a aproveitar o poder
+            do sol e reduzir seus custos com energia.
+          </p>
         </TitleContainer>
 
         <BenefitsContainer>
@@ -27,7 +52,7 @@ const Benefits = () => {
           <BenefitsCard
             img={hourglass}
             title="Alta Durabilidade"
-            desc="Painéis solares têm alta durabilidade, com vida útil garantida de pelo menos 25 anos, podendo passar dos 30 anos com manutenções periódicas. Além disso, o Brasil tem alta incidência solar e boa performance da tecnologia mesmo em regiões mais chuvosas."
+            desc="Painéis solares têm alta durabilidade, com vida útil garantida de pelo menos 25 anos, podendo passar dos 30 anos com manutenções periódicas."
           />
           <BenefitsCard
             img={real}
@@ -59,6 +84,7 @@ const Container = styled.div`
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 15px;
 
   @media ${device.md} {
     grid-template-columns: 1fr;
@@ -66,8 +92,17 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
+  p {
+    margin-bottom: 15px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
   @media ${device.md} {
     h1 {
+      margin-bottom: 50px;
+    }
+    p:last-child {
       margin-bottom: 50px;
     }
   }

@@ -54,82 +54,101 @@ img {
   border-radius: 5px;
 }
 
-// Typography
-
+//Headings
 .hl-1 {
-  font-family: 'Lora', serif;
-  font-weight: 300;
-  font-size: 4rem;
-  letter-spacing:-0.5px;
-  line-height:70.4px;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 .hl-2 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  font-size: 3.187rem;
-  letter-spacing: 0px;
-  line-height:56.1px;
+  font-size: 2.25rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.075rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 .hl-3 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  font-size: 2.25rem;
-  letter-spacing: 0.25px;
-  line-height:39.6px;
+  font-size: 1.75rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.05rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 .hl-4 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  font-size: 1.56rem;
-  line-height:27.5px;
+  font-size: 1.35rem;
+  line-height: 1.7rem;
+  letter-spacing: 0rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .hl-5 {
-  font-family: 'Lora', serif;
-  font-weight: 600;
-  font-size: 1.312rem;
-  line-height:23.1px;
+  font-size: 1.125rem;
+  line-height: 1.45rem;
+  letter-spacing: 0.0375rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 .hl-6 {
-  font-family: 'Lora', serif;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height:19.8px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.075rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
-
-.sb-1 {
-  font-family: 'Lora', serif;
-  font-weight: 500;
-  font-size: 1.062rem;
-  letter-spacing: 0.15px;
-  line-height:18.7px;
-}
-
-.b-1 {
+//Paragraphs
+.b {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.075rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 0.93rem;
-  letter-spacing: 0.5px;
-  line-height:19.5px;
+  font-weight: 400;
 }
 
-@media ${device.md} {
-  .hl-2 {
+@media ${device.sm} {
+  .hl-1 {
     font-size: 2.25rem;
-    letter-spacing: 0.25px;
-    line-height:39.6px;
+    line-height: 2.8rem;
   }
-  .b-1 {
-    font-size: 0.812rem;
-    letter-spacing: 0.25px;
-    line-height:16.9px;
+
+  .hl-2 {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+  }
+
+  .hl-3 {
+    font-size: 1.35rem;
+    line-height: 1.7rem;
+  }
+
+  .hl-4 {
+    font-size: 1.125rem;
+    line-height: 1.45rem;
+  }
+
+  .hl-5 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .hl-6 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+ .b {
+    font-size: 0.875rem;
+    line-height: 1rem;
   }
 }
+
 `;
 
 export default GlobalStyles;

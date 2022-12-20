@@ -13,8 +13,8 @@ const SimpleCard = (dados: Args) => {
       <li>
         <img src={dados.img} alt="Card logo" />
       </li>
-      <li className="hl-5">{dados.title}</li>
-      <li className="b-1">{dados.desc}</li>
+      <li className="hl-4">{dados.title}</li>
+      <li className="b">{dados.desc}</li>
     </CardUl>
   );
 };

@@ -4,7 +4,7 @@ import { device } from '../../styles/BreakPoints';
 
 const Banner = () => {
   return (
-    <BannerContent>
+    <BannerContent id="banner">
       <TextContainer>
         <h2 className="hl-2">
           Energia limpa e renovavel

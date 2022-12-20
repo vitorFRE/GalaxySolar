@@ -4,35 +4,69 @@ import { device } from '../../styles/BreakPoints';
 
 export const Contact = () => {
   return (
-    <Container>
-      <h2 className="hl-3">Contato</h2>
+    <Container id="contato">
+      <h2 className="hl-2">Contato</h2>
+      <p>
+        Entre em contato conosco para mais informações sobre nossos serviços de
+        energia solar ou para agendar uma consulta. Estamos ansiosos para
+        ajudá-lo a explorar as opções de energia solar e encontrar a solução
+        perfeita para suas necessidades. Não hesite em nos enviar uma mensagem
+        ou ligar para nós para marcar uma consulta. Estamos sempre dispostos a
+        responder a perguntas e ajudar de qualquer maneira que pudermos.
+      </p>
 
       <Form>
         <div>
-          <label htmlFor="nome">Nome</label>
-          <input type="text" name="nome" placeholder="Seu nome" />
+          <label className="hl-5" htmlFor="nome">
+            Nome
+          </label>
+          <input className="b" type="text" name="nome" placeholder="Seu nome" />
         </div>
         <div>
-          <label htmlFor="telefone">Telefone</label>
-          <input type="text" name="telefone" placeholder="(00) 99999-9999" />
+          <label className="hl-5" htmlFor="telefone">
+            Telefone
+          </label>
+          <input
+            className="b"
+            type="text"
+            name="telefone"
+            placeholder="(00) 99999-9999"
+          />
         </div>
         <div>
-          <label htmlFor="email">E-mail</label>
-          <input type="email" name="email" placeholder="email@email.com" />
+          <label className="hl-5" htmlFor="email">
+            E-mail
+          </label>
+          <input
+            className="b"
+            type="email"
+            name="email"
+            placeholder="email@email.com"
+          />
         </div>
         <div>
-          <label htmlFor="assunto">Assunto</label>
-          <input type="text" name="assunto" placeholder="Duvida" />
+          <label className="hl-5" htmlFor="assunto">
+            Assunto
+          </label>
+          <input
+            className="b"
+            type="text"
+            name="assunto"
+            placeholder="Duvida"
+          />
         </div>
         <div id="textarea">
-          <label htmlFor="mensagem">Mensagem</label>
+          <label className="hl-5" htmlFor="mensagem">
+            Mensagem
+          </label>
           <textarea
+            className="b"
             name="mensagem"
             rows={5}
             placeholder="O que você precisa?"
           ></textarea>
         </div>
-        <button>Enviar</button>
+        <button className="b">Enviar</button>
       </Form>
     </Container>
   );
@@ -46,7 +80,13 @@ const Container = styled.div`
   color: ${({ theme }) => theme.colors.White};
 
   > h2 {
-    padding: 95px 0 80px 0;
+    padding: 95px 0 10px 0;
+  }
+
+  > p {
+    margin-bottom: 80px;
+    max-width: 80ch;
+    color: ${({ theme }) => theme.colors.Grey};
   }
 `;
 
@@ -74,9 +114,9 @@ const Form = styled.form`
     padding: 12px;
     width: 100%;
     box-sizing: border-box;
-    color: white;
+    color: black;
 
-    background: rgba(32, 32, 32, 0.15);
+    background: #f7f7f7;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 

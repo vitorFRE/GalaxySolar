@@ -4,36 +4,41 @@ import Theme from '../../styles/Theme';
 import rural from '../../assets/rural.png';
 import residencial from '../../assets/residencial.png';
 import comercial from '../../assets/comercial.png';
+import { device } from '../../styles/BreakPoints';
 
 const OurWork = () => {
   return (
     <Container>
       <Content>
-        <h2 className="hl-2">Sobre nosso trabalho</h2>
+        <h2 className="hl-2">Sobre nossos serviços</h2>
+        <p className="b">
+          Nosso objetivo é ajudar nossos clientes a fazer a transição para uma
+          fonte de energia mais sustentável e eficiente em termos de custos."
+        </p>
 
         <Works>
           <ul>
-            <li className="hl-3">Residencial</li>
-            <li>
-              A energia solar pode proporcionar uma economia de até 80% na conta
-              de luz mensal, com o retorno do investimento feito em
-              aproximadamente três anos.
+            <li className="hl-2">Residencial</li>
+            <li className="b">
+              Para as propriedades residenciais, oferecemos design e instalação
+              de sistemas de painéis solares, bem como manutenção e suporte
+              continuados.
             </li>
           </ul>
           <ul>
-            <li className="hl-3">Comercial</li>
-            <li>
-              A energia solar pode proporcionar uma economia de até 80% na conta
-              de luz mensal, com o retorno do investimento feito em
-              aproximadamente três anos.
+            <li className="hl-2">Comercial</li>
+            <li className="b">
+              Para as propriedades comerciais, temos a experiência e os recursos
+              para ajudar a sua empresa a aproveitar o poder do sol e reduzir
+              seus custos com energia.
             </li>
           </ul>
           <ul>
-            <li className="hl-3">Rural</li>
-            <li>
-              A energia solar pode proporcionar uma economia de até 80% na conta
-              de luz mensal, com o retorno do investimento feito em
-              aproximadamente três anos.
+            <li className="hl-2">Rural</li>
+            <li className="b">
+              para as propriedades rurais, podemos fornecer soluções de energia
+              solar personalizadas para atender às suas necessidades
+              específicas.
             </li>
           </ul>
         </Works>
@@ -52,8 +57,20 @@ const Content = styled.div`
   padding: 0 1rem;
   margin: 0 auto;
 
+  > p {
+    margin-bottom: 60px;
+    max-width: 80ch;
+    @media ${device.sm} {
+      margin-bottom: 40px;
+    }
+  }
+
   > h2 {
-    padding: 95px 0 80px 0;
+    padding: 95px 0 10px 0;
+
+    @media ${device.sm} {
+      padding: 50px 0 10px 0;
+    }
   }
 `;
 
@@ -103,6 +120,12 @@ const Works = styled.div`
         ),
         url(${rural});
     }
+  }
+
+  @media ${device.sm} {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
   }
 `;
 

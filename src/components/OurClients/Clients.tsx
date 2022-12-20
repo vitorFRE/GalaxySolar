@@ -15,9 +15,9 @@ const Clients = () => {
   }, []);
 
   return (
-    <Container>
+    <Container id="clientes">
       <Title>
-        <h2 className="hl-2">Nossos Clientes</h2>
+        <h2 className="hl-2">Avaliações de Nossos Clientes</h2>
       </Title>
 
       <Client ref={carousel} whileTap={{ cursor: 'grabbing' }}>
@@ -40,6 +40,8 @@ const Clients = () => {
             : null}
         </ClientList>
       </Client>
+
+      <h3 className="drag hl-6">ARRASTE</h3>
     </Container>
   );
 };
@@ -48,6 +50,24 @@ const Container = styled.div`
   max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
+
+  .drag {
+    color: ${({ theme }) => theme.colors.Primary};
+    text-align: center;
+    font-weight: 600;
+
+    margin-bottom: 40px;
+
+    &::after {
+      content: '>';
+      margin-left: 10px;
+    }
+
+    &::before {
+      content: '<';
+      margin-right: 10px;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -58,7 +78,7 @@ const Title = styled.div`
 const Client = styled(motion.div)`
   overflow: hidden;
   cursor: grab;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 `;
 
 const ClientList = styled(motion.div)`
